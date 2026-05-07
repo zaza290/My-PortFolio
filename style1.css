@@ -1,0 +1,45 @@
+/* Sets the default font for the whole page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; 
+    color: #000000; 
+}
+
+/* This box holds everything and centers it perfectly */
+.activity-container {
+    text-align: center; 
+    margin-top: 40px; 
+    padding: 20px;
+}
+
+/* Styles for the titles to look like the serif font in the image */
+h1, h2 {
+    font-family: "Times New Roman", Times, serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Styles the small broken image icon area */
+.tiny-image {
+    width: 20px; 
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+/* Makes the author's name red, bold, and italic */
+.author-name {
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.2em; 
+    font-family: "Times New Roman", Times, serif;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* Styles the actual poem text */
+.poem-content p {
+    font-weight: bold; /* Makes all the poem text bold */
+    line-height: 1.5; /* Gives a little breathing room between lines */
+    margin-bottom: 25px; /* Creates the big gaps between the stanzas */
+}

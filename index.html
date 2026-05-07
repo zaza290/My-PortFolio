@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio of Wilmer Sanchez - Frontend Developer & UI Designer. Crafting digital experiences that inspire.">
+    <meta name="author" content="Wilmer Sanchez">
+    <meta property="og:title" content="W. Sanchez | Portfolio">
+    <title>W. Sanchez | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- === CURSOR GLOW === -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <!-- === HEADER / NAVIGATION === -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">Wilmer G. Sanchez<span>.</span></a>
+            
+            <!-- Desktop Menu -->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                </ul>
+                <a href="mailto:wgsanchez@nemsu.edu.ph" class="btn--primary nav__cta">Hire Me</a>
+            </div>
+
+            <!-- Hamburger Button -->
+            <button class="hamburger" id="nav-toggle" aria-label="Toggle Menu">
+                <span class="hamburger__bar"></span>
+                <span class="hamburger__bar"></span>
+                <span class="hamburger__bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu">
+        <ul class="mobile-menu__list">
+            <li><a href="#home" class="mobile-menu__link">Home</a></li>
+            <li><a href="#about" class="mobile-menu__link">About</a></li>
+            <li><a href="#skills" class="mobile-menu__link">Skills</a></li>
+            <li><a href="#work" class="mobile-menu__link">Work</a></li>
+            <li><a href="mailto:wgsanchez@nemsu.edu.ph" class="btn--primary mobile-menu__cta">Hire Me</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- === HOME / HERO SECTION === -->
+        <section class="hero section" id="home">
+            <div class="hero__bg">
+                <div class="hero__orb"></div>
+                <div class="hero__dots"></div>
+            </div>
+            
+            <div class="container">
+                <!-- Two-Column Layout for Desktop -->
+                <div class="hero__grid">
+                    <!-- Left Column: Content -->
+                    <div class="hero__content">
+                        <div class="hero__badge" data-reveal data-delay="0">
+                            <span class="hero__badge-dot"></span>
+                            Open to Collaborations
+                        </div>
+                        
+                        <h1 class="hero__title" data-reveal data-delay="150">
+                            Building Smart Solutions, On Screen and Off. <br>
+                        </h1>
+                        
+                        <p class="hero__subtitle" data-reveal data-delay="300">
+                            I'm a tech enthusiast passionate about full-stack development and hardware integration.
+                             From Laravel and Vue.js to Arduino, I love bringing ideas to life.
+                        </p>
+                        
+                        <div class="hero__btns" data-reveal data-delay="450">
+                            <a href="#work" class="btn--primary">View My Work</a>
+                            <a href="mailto:wgsanchez@nemsu.edu.ph" class="btn--outline">Hire Me</a>
+                        </div>
+                        
+                        <div class="hero__socials" data-reveal data-delay="600">
+                            <!-- GitHub Icon -->
+                            <!-- REPLACE: Change 'YOUR_GITHUB_USERNAME' with your actual GitHub username -->
+                            <a href="https://github.com/zaza290" target="_blank" rel="noopener noreferrer" class="hero__social-link" aria-label="GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                            </a>
+                            <!-- Gmail Icon -->
+                            <a href="mailto:wgsanchez@nemsu.edu.ph" class="hero__social-link" aria-label="Email">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                            </a>
+                            <!-- Facebook Messenger Icon -->
+                            <!-- REPLACE: Change 'wilmer.sanchez.05' with your actual FB username or ID -->
+                            <a href="https://m.me/zanchiz.200326" target="_blank" rel="noopener noreferrer" class="hero__social-link" aria-label="Facebook">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Profile Picture -->
+                    <div class="hero__image-wrapper" data-reveal data-delay="300">
+                        <div class="hero__image-container">
+                            <!-- Animated Glow Background -->
+                            <div class="hero__image-glow"></div>
+                            
+                            <!-- Decorative Orbiting Dots -->
+                            <div class="hero__image-dot hero__image-dot--1"></div>
+                            <div class="hero__image-dot hero__image-dot--2"></div>
+                            <div class="hero__image-dot hero__image-dot--3"></div>
+
+                            <div class="hero__image-inner">
+                                <!-- ============================================================ -->
+                                <!-- REPLACE THIS IMAGE: Add your own profile picture here.       -->
+                                <!-- Recommended: Square aspect ratio, 400x400px.                 -->
+                                <!-- ============================================================ -->
+                                <img src="image/profile.jpg" alt="Wilmer Sanchez" class="hero__img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- === ABOUT SECTION === -->
+        <section class="about section" id="about">
+            <div class="container about__container">
+                <div class="about__img-wrapper" data-reveal data-reveal-direction="left">
+                    <div class="featured-projects">
+                        <h2 class="featured-projects__title">Featured Projects</h2>
+                        <div class="featured-projects__grid">
+                            <!-- Card 1: Water Vendo -->
+                            <article class="project-card-mini">
+                                <div class="card-image-wrapper">
+                                    <img src="image/ven.jfif" alt="Arduino Water Vendo Machine" class="project-card-mini__img">
+                                    <p class="project-card-mini__desc">Developed an efficient and sustainable 'Free Water Vendo Machine' using Arduino technology for automated control. Led the hardware-software integration, showcasing practical engineering for real-world impact. Recognized and endorsed by Mayor Roxanne Pimentel's office.</p>
+                                </div>
+                                <div class="project-card-mini__content">
+                                    <h3 class="project-card-mini__title">Smart Water Vendo: IoT Innovation for the Community</h3>
+                                </div>
+                            </article>
+
+                            <!-- Card 2: CTF Hackathon -->
+                            <article class="project-card-mini">
+                                <div class="card-image-wrapper">
+                                    <img src="image/hac.jfif" alt="CTF Hackathon Champions" class="project-card-mini__img">
+                                    <p class="project-card-mini__desc">Proud to be part of the winning team in an intense Capture The Flag competition. We navigated complex cybersecurity challenges across web, network, and reverse engineering categories, demonstrating deep problem-solving skills and teamwork under pressure.</p>
+                                </div>
+                                <div class="project-card-mini__content">
+                                    <h3 class="project-card-mini__title">Champions: Capture The Flag (CTF) Hackathon</h3>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about__content" data-reveal data-reveal-direction="right">
+                    <div class="section-label">Get To Know Me</div>
+                    <h2 class="section-title">Wilmer Sanchez — Aspiring CS Student & Innovator.</h2>
+                    <div class="about__text">
+                        <p>
+                            I am a highly motivated 2nd-year BS Computer Science student with a deep-seated passion for problem-solving and full-stack development. My journey is driven by a curiosity for how things work, leading me to explore both the software and hardware realms of technology.
+                        </p>
+                        <p>
+                            From competing in intense <strong>Capture The Flag (CTF) Hackathons</strong> to engineering a <strong>'Free Water Vendo Machine'</strong> powered by Arduino, I thrive on challenges that push the boundaries of my technical skills. I am dedicated to building efficient, accessible, and innovative solutions that make a tangible impact.
+                        </p>
+                    </div>
+                    
+                    <div class="about__stats">
+                        <div class="about__stat">
+                            <span class="about__stat-num">2nd</span>
+                            <span class="about__stat-label">Year CS Student</span>
+                        </div>
+                        <div class="about__stat">
+                            <span class="about__stat-num">1+</span>
+                            <span class="about__stat-label">Hackathon Participation</span>
+                        </div>
+                        <div class="about__stat">
+                            <span class="about__stat-num">5+</span>
+                            <span class="about__stat-label">Core Tech Projects</span>
+                        </div>
+                        <div class="about__stat">
+                            <span class="about__stat-num">🛠️</span>
+                            <span class="about__stat-label">Hardware & Software</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#work" class="about__link">Explore My Work <span>&rarr;</span></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- === SKILLS SECTION === -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <div class="section-label center">My Expertise</div>
+                <h2 class="section-title center" data-reveal>Modern Tech Stack</h2>
+                
+                <div class="skills__grid">
+                    <!-- Category 1: Frontend -->
+                    <div class="skills__card" data-reveal data-delay="0">
+                        <div class="skills__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        </div>
+                        <h3 class="skills__card-title">Frontend & UI</h3>
+                        <div class="skills__tags">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Tailwind CSS</span>
+                            <span class="skill-tag">Vue.js</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 2: Backend & Frameworks -->
+                    <div class="skills__card" data-reveal data-delay="150">
+                        <div class="skills__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+                        </div>
+                        <h3 class="skills__card-title">Backend & Frameworks</h3>
+                        <div class="skills__tags">
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">Laravel</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">REST APIs</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 3: Programming & Hardware -->
+                    <div class="skills__card" data-reveal data-delay="300">
+                        <div class="skills__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                        </div>
+                        <h3 class="skills__card-title">Core & Hardware</h3>
+                        <div class="skills__tags">
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">Arduino</span>
+                            <span class="skill-tag">Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- === WORK / PORTFOLIO SECTION === -->
+        <section class="work section" id="work">
+            <div class="container">
+                <div class="work__header center">
+                    <span class="eyebrow" data-reveal>Recent Work</span>
+                    <h2 class="section-title center" data-reveal data-delay="100">Showcasing Excellence.</h2>
+                    <p class="section-subtitle center" data-reveal data-delay="200">A curated selection of projects where design meets performance.</p>
+                </div>
+                
+                <div class="work__grid">
+                    <!-- Project 1 -->
+                    <article class="work-card" data-reveal data-delay="0">
+                        <figure class="work-card__figure">
+                            <img src="image/screen1.png" alt="E-Commerce Platform" class="work-card__img" loading="lazy">
+                        </figure>
+                        <div class="work-card__body">
+                            <h3 class="work-card__title">HTML & CSS Poem Activity</h3>
+                            <p class="work-card__desc">A web development practice project demonstrating the proper use of text formatting and layout for a poem.</p>
+                            <a href="activity1.html" class="btn--outline work-card__btn">Activity 1 &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="work-card" data-reveal data-delay="100">
+                        <figure class="work-card__figure">
+                            <img src="image/screen2.png" alt="SaaS Dashboard" class="work-card__img" loading="lazy">
+                        </figure>
+                        <div class="work-card__body">
+                            <h3 class="work-card__title">HTML Lab 2: Text Formatting</h3>
+                            <p class="work-card__desc">A web development practice project demonstrating the use of HTML tags for styling, coloring, and highlighting text.</p>
+                            <a href="activity2.html" class="btn--outline work-card__btn">Activity 2 &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="work-card" data-reveal data-delay="200">
+                        <figure class="work-card__figure">
+                            <img src="image/screen3.png" alt="Creative Portfolio" class="work-card__img" loading="lazy">
+                        </figure>
+                        <div class="work-card__body">
+                            <h3 class="work-card__title">HTML Tables Lab</h3>
+                            <p class="work-card__desc">An activity demonstrating how to structure tabular data using rows, columns, merged cells (colspan), and CSS styling.</p>
+                            <a href="activity3.html" class="btn--outline work-card__btn">Activity 3 &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="work-card" data-reveal data-delay="300">
+                        <figure class="work-card__figure">
+                            <img src="image/screen4.png" alt="Health App" class="work-card__img" loading="lazy">
+                        </figure>
+                        <div class="work-card__body">
+                            <h3 class="work-card__title">Advanced Table Formatting</h3>
+                            <p class="work-card__desc">An HTML & CSS activity demonstrating how to use the colspan attribute to merge cells and how to apply custom background colors to specific rows.</p>
+                            <a href="activity4.html" class="btn--outline work-card__btn">Activity 4 &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 5 -->
+                    <article class="work-card" data-reveal data-delay="400">
+                        <figure class="work-card__figure">
+                            <img src="image/screen5.png" alt="FinTech Landing" class="work-card__img" loading="lazy">
+                        </figure>
+                        <div class="work-card__body">
+                            <h3 class="work-card__title">HTML Nested Tables</h3>
+                            <p class="work-card__desc">A structural web development exercise demonstrating how to insert tables inside the cells of a parent table to create complex layouts.</p>
+                            <a href="activity5.html" class="btn--outline work-card__btn">Activity 5 &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 6 -->
+                    <article class="work-card" data-reveal data-delay="500">
+                        <figure class="work-card__figure">
+                            <img src="image/screen6.png" alt="Social Media Tool" class="work-card__img" loading="lazy">
+                        </figure>
+                        <div class="work-card__body">
+                            <h3 class="work-card__title">Webpage Wireframe Structure</h3>
+                            <p class="work-card__desc">Creating a distinct layout with header, footer, sidebar, and central content areas utilizing a strictly tabular HTML grid.</p>
+                            <a href="activity6.html" class="btn--outline work-card__btn">Activity 6 &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="work-card" data-reveal data-delay="500">
+                        <figure class="work-card__figure">
+                            <img src="image/screen7.png" alt="Social Media Tool" class="work-card__img" loading="lazy">
+                        </figure>
+                        <div class="work-card__body">
+                            <h3 class="work-card__title">HTML List Types Showcase</h3>
+                            <p class="work-card__desc">Demonstrating Unordered and Ordered Lists in a Table Format</p>
+                            <a href="activity7.html" class="btn--outline work-card__btn">Activity 7 &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- === FOOTER === -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__top">
+                <h2 class="footer__title">Let's Build Something Great Together.</h2>
+                <p class="footer__subtitle">Have a project in mind or just want to say hello? I'd love to hear from you.</p>
+                <a href="https://m.me/zanchiz.200326" target="_blank" rel="noopener noreferrer" class="btn--primary footer__cta">Send a Message</a>
+            </div>
+            
+            <hr class="footer__divider">
+            
+            <div class="footer__bottom">
+                <p class="footer__copy">&copy; <span id="year"></span> Wilmer Sanchez. All rights reserved.</p>
+                <div class="footer__socials">
+                    <a href="https://github.com/zaza290" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                    </a>
+                    <a href="mailto:wgsanchez@nemsu.edu.ph" class="footer__social-link" aria-label="Email">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                    </a>
+                    <a href="https://m.me/wilmer.sanchez.05" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 3 - Student Grade Report</title>
+    <style>
+        /* Centers everything on the page and sets the font */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+            margin: 0;
+            color: #000000;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        /* Styles the small Activity 3 text */
+        .activity-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        /* Styles the main purple title */
+        .main-title {
+            color: #723b69; /* Matches the dark purple color in the image */
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Table structural styling */
+        table {
+            border-collapse: collapse;
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Borders and padding for all table cells */
+        th, td {
+            border: 1px solid #333333;
+            padding: 10px 15px;
+            text-align: center;
+        }
+
+        /* Background color for the header and footer rows */
+        th, tfoot td {
+            background-color: #c7b8e5; /* Matches the light purple background */
+            font-weight: bold;
+        }
+
+        /* Aligns the text to the right for the spanning footer cells */
+        .align-right {
+            text-align: right;
+            padding-right: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <p class="activity-title">Activity 3</p>
+        <h1 class="main-title">Student Grade Report</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Instructor</th>
+                    <th>Prelim</th>
+                    <th>Midterm</th>
+                    <th>Final</th>
+                    <th>Remarks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>Mr. Santos</td>
+                    <td>89</td>
+                    <td>90</td>
+                    <td>91</td>
+                    <td>Passed</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Ms. Cruz</td>
+                    <td>88</td>
+                    <td>87</td>
+                    <td>90</td>
+                    <td>Passed</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Mr. Reyes</td>
+                    <td>85</td>
+                    <td>86</td>
+                    <td>88</td>
+                    <td>Passed</td>
+                </tr>
+                <tr>
+                    <td>Database</td>
+                    <td>Ms. Lopez</td>
+                    <td>90</td>
+                    <td>92</td>
+                    <td>91</td>
+                    <td>Passed</td>
+                </tr>
+                <tr>
+                    <td>Networking</td>
+                    <td>Mr. Garcia</td>
+                    <td>87</td>
+                    <td>89</td>
+                    <td>90</td>
+                    <td>Passed</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5" class="align-right">Average Grade</td>
+                    <td>89</td>
+                </tr>
+                <tr>
+                    <td colspan="5" class="align-right">General Remarks</td>
+                    <td>Passed</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+</body>
+</html>

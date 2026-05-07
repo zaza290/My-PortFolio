@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 6 - Table Layout</title>
+    <style>
+        /* Centers everything and sets the default background */
+        body {
+            text-align: center;
+            background-color: #ffffff;
+            color: #000000;
+            margin: 0;
+            padding-top: 50px;
+        }
+
+        /* Styles the main title with a Serif font */
+        h1 {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        /* Outer table styling (creates the outside border of the double-line) */
+        table {
+            margin: 0 auto;
+            width: 900px; /* Makes the table wide like in the image */
+            border-collapse: separate; 
+            border-spacing: 2px; /* Creates the gap for the double-line effect */
+            border: 1px solid #000000;
+        }
+
+        /* Inner cell styling */
+        td {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 18px;
+            border: 1px solid #000000;
+            text-align: center;
+        }
+
+        /* Specific padding for the top and bottom full-width rows */
+        .header-footer {
+            padding: 30px;
+        }
+
+        /* Specific padding and width for the side columns */
+        .sidebar {
+            width: 30%;
+            padding: 80px 20px; /* Large top/bottom padding to make it tall */
+        }
+
+        /* Specific padding for the middle rows */
+        .middle-content {
+            width: 40%;
+            padding: 30px 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>ACTIVITY 6</h1>
+
+    <table>
+        <tr>
+            <td colspan="3" class="header-footer">TOP</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2" class="sidebar">LEFT</td> 
+            
+            <td class="middle-content">middle up</td>
+            
+            <td rowspan="2" class="sidebar">RIGHT</td> 
+        </tr>
+
+        <tr>
+            <td class="middle-content">middle down</td>
+        </tr>
+
+        <tr>
+            <td colspan="3" class="header-footer">BOTTOM</td>
+        </tr>
+    </table>
+
+</body>
+</html>

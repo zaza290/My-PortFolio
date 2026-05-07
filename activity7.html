@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML List Types Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 15px;
+            vertical-align: top;
+        }
+        .main-header {
+            background-color: #800080; /* Purple */
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.1em;
+            padding: 10px;
+        }
+        .section-header {
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: #fcfcfc; /* Slight off-white to match the image feel */
+        }
+        .list-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: block;
+        }
+        ul {
+            margin-top: 0;
+        }
+        ol {
+            margin-top: 0;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th colspan="3" class="main-header">TYPE OF HTML LIST</th>
+        </tr>
+
+        <tr>
+            <td colspan="3" class="section-header">MY FAVORITE THINGS</td>
+        </tr>
+        <tr>
+            <td>
+                <span class="list-title">Favorite Color</span>
+                <ul style="list-style-type: square;">
+                    <li>Blue</li>
+                    <li>Red</li>
+                    <li>Green</li>
+                    <li>Yellow</li>
+                    <li>Black</li>
+                </ul>
+            </td>
+            <td>
+                <span class="list-title">Favorite Food</span>
+                <ul style="list-style-type: circle;">
+                    <li>Pizza</li>
+                    <li>Fried Chicken</li>
+                    <li>Burger</li>
+                    <li>Spaghetti</li>
+                    <li>Ice Cream</li>
+                </ul>
+            </td>
+            <td>
+                <span class="list-title">Favorite Animal</span>
+                <ul style="list-style-type: none; padding-left: 20px;">
+                    <li>Dog</li>
+                    <li>Cat</li>
+                    <li>Rabbit</li>
+                    <li>Bird</li>
+                    <li>Fish</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="3" class="section-header">FAVORITE BRAND OF CAR</td>
+        </tr>
+        <tr>
+            <td>
+                <ol type="A">
+                    <li>Kia</li>
+                    <li>Jaguar</li>
+                    <li>Honda</li>
+                    <li>Ashton Martin</li>
+                </ol>
+            </td>
+            <td>
+                <ol type="I">
+                    <li>Chevrolet</li>
+                    <li>BMW</li>
+                    <li>Hyundai</li>
+                    <li>Ferrari</li>
+                </ol>
+            </td>
+            <td>
+                <ol type="1">
+                    <li>Mercedes-Benz</li>
+                    <li>Toyota</li>
+                    <li>Porsche</li>
+                    <li>Lexus</li>
+                    <li>Bugatti</li>
+                </ol>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
